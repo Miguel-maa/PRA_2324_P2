@@ -93,9 +93,14 @@ int mochila(int N, vector<int>& P, vector<int>& B, int M, vector<int>& Sol){
 
 
 int main(){
-  int tam_vector = 4, peso_max_mochila = 5;
+  int tam_vector = 4, peso_max_mochila = 0;
   vector<int> vector_peso = {1, 3, 2, 4}, vector_valor = {10, 20, 15, 20}, Sol_vector(tam_vector);
   int Sol_nun_elementos, valor_total;
+
+  // Pedir por patalla el peso maximo de la mochila
+  cout << "Dime el máximo peso que puede llevar la mochila: ";
+  cin >> peso_max_mochila;
+  cout << endl;
 
   // Imprimir por pantalla los valores
   for(int j=0; j<tam_vector; j++){

@@ -96,9 +96,14 @@ int Cambio(vector<int>& V, int N, int M, vector<int>& Sol){
 
 
 int main(){
-  int tam_vector = 3, moneda = 8;
+  int tam_vector = 3, moneda = 0;
   vector<int> vector = {1, 4, 6}, Sol_vector(tam_vector);
   int Sol_nun_moneda;
+
+  // Pedir por patalla el valor de la moneda
+  cout << "Dime el valor de la moneda: ";
+  cin >> moneda;
+  cout << endl;
 
   // Imprimir por pantalla los valores
   cout << "Tenemos monedas de los siguientes valores:" << endl;
